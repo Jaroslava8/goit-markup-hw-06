@@ -449,32 +449,32 @@
 
     <form method="GET" class="contactForm">
      
-    
+    <div class="box">
       <p class="formPStyle">Оставьте свои данные, мы вам перезвоним</p>
 
       <div class="formContent">
          <label class="formLabel" for="name"><span class="formTextStyle" >Имя</span> </label>  
          <input class="inputStyle" name="user-name" type="name" id="name" />
-          <svg class="formIcon" id="icon-person" width="12px" height="12px" >
-            <use scr="./images/icons/6dz.svg#icon-person" > 
+          <svg class="formIcon" id="icon-person" width="18px" height="18px" >
+            <use href="./images/icons/userbox.svg#icon-person" > 
             </use>  
           </svg>
       </div>
 
       <div class="formContent">
         <label class="formLabel"> <span class="formTextStyle">Телефон</span></label>
-        <input  class="inputStyle" name="user-tel" type="tel" >
-        <svg class="formIcon" id="icon-phone-black"  width="13px" height="13px">
-          <use scr="./images/icons/6dz.svg#icon-phone" > 
+        <input  class="inputStyle" name="user-tel" type="tel"/>
+        <svg class="formIcon" id="icon-phone-black"  width="18px" height="18px">
+          <use href="./images/icons/userbox.svg#icon-phone" > 
           </use> 
           </svg>
       </div>
 
      <div class="formContent">
         <label class="formLabel" for="email"> <span class="formTextStyle">Почта</span></label>
-        <input class="inputStyle" name="user-email" type="email" id="email" >
-        <svg class="formIcon"  id="icon-email-black"  width="15px" height="12px"> 
-          <use scr="./images/icons/6dz.svg#icon-email"> 
+        <input class="inputStyle" name="user-email" type="email" id="email"/>
+        <svg class="formIcon"  id="icon-email-black"  width="18px" height="18px"> 
+          <use href="./images/icons/userbox.svg#icon-email"> 
           </use> 
           </svg>
      </div>
@@ -488,22 +488,22 @@
 
 
     <div class="checkBoxContent">
-      <ul>
-        <li> 
-          <input class="checkbox" type="checkbox" name="checkbox" checked >
-        <svg class="checkBoxStyle">
-        <use scr="./images/icons/6dz.svg#icon-check"></use>
-        </svg>
-        <label class="checkBoxLabel"><span class="checkText">Соглашаюсь с рассылкой и принимаю  </span><a href="#" class="check-a">Условия договора </a> 
-        </label>
-        </li>
-      </ul>
+      <label class="checkBoxLabel" for="checkbox"></label>
+      <span>
+          <input class="checkbox" type="checkbox" name="checkbox"/>
+             <svg class="checkBoxStyle">
+        <use href="./images/icons/6dz.svg#icon-check"></use>
+        </svg> </span>
+     
+        <span class="checkText"> Соглашаюсь с рассылкой и принимаю  </span><a href="#" class="check-a"> Условия договора </a> 
+        
+
         
     </div >
 
     <button class="buttonSubmit" type="submit"> <span > Отправить</span>
     </button>
-    
+  </div>
     </form>
 
   </div>
