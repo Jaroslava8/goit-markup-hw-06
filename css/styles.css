@@ -526,12 +526,14 @@ position: relative;
 .icon:hover,
 .icon:focus{
   fill: var(--active-color);
+  cursor: pointer;
 
 }
 
 .socialLink:hover,
 .socialLink:focus{
   background-color: var(--web-color);
+  cursor: pointer;
   
 }
 
@@ -788,12 +790,14 @@ button li{
 .clientLi:focus svg {
 fill:var(--web-color);
 border-color: var(--web-color);
+cursor: pointer;
 }
 .clientIcon{
 
   fill: #afb1b8;
   justify-content: center;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
  
@@ -981,15 +985,12 @@ margin: 0 ;
 .formIcon{
   display: block;
   position: absolute;
-  fill: #212121;
+
   top:50%;
   left: 15px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
-.formIcon:hover,
-.formIcon:focus{
-  fill:rgba(33, 150, 243, 1) ;
-}
+
 .formTextStyle{
 display:block;
 
@@ -1001,30 +1002,49 @@ line-height: 1.1716;
 color: #757575;
 
 margin-bottom: 4px;
-
 letter-spacing: 0.01em;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
 }
 .inputStyle{
 
   display: block;
+
   width: 408px;
   height: 40px;
   margin-bottom: 10px;
   margin-top: 0;
   padding-left: 42px;
   padding-right: 0;
-  
   border: 1px solid rgba(33, 33, 33, 0.2);
+ 
   border-radius: 4px;
-  cursor: var(--web-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: var(--web-color) pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
 } 
 
-.inputStyle:hover,
-.inputStyle:focus{
-  border-color:  rgba(24, 140, 232, 1);
+
+.formIcon:hover,
+.formTextStyle:hover,
+.formLabel:hover,
+.inputStyle:hover
+{
+  fill: rgba(33, 150, 243, 1);
   cursor: pointer;
+  border-color: rgba(33, 150, 243, 1);
+}
+
+.inputStyle:focus + .formIcon{
+  fill: rgba(33, 150, 243, 1);
+  border-color: rgba(33, 150, 243, 1);
+
+}
+.formLabel:focus,
+.inputStyle:focus,
+.formIcon:focus{
+  fill: rgba(33, 150, 243, 1);
+  border-color: rgba(33, 150, 243, 1);
 }
 
 
@@ -1082,13 +1102,16 @@ padding: 12px 16px;
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .formButton:hover,
 .formButton:focus,
 .formButton:active
 {
- background-color:rgba(33, 150, 243, 1)}
+ background-color:rgba(33, 150, 243, 1)
+ 
+}
 
  .buttonSubmit{
   display: block;
@@ -1223,8 +1246,7 @@ a {
 /*универсальный селектор*/
 
 .checkBoxContent{
-  display: inline-block;
-  text-align: center;
+
   margin-top: 20px;
   margin-left: 40px;
   margin-right: 40px;
@@ -1259,37 +1281,28 @@ overflow: hidden;
 
 .iconCheck{
   display: inline-block;
+ 
   fill: #FFFFFF;
-
+  border: 1px solid  rgba(33, 33, 33, 1);
   border-radius: 2px ;
-
   appearance: none;
   margin: 0;
   padding: 0;
   transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .form-label{
-  text-align: center;
+ 
   margin-right: 9px;
-  border: 1px solid black;
   margin-right: 0;
-  border-radius: 4px;
   width: 16px;
   height: 15px;
   
-}
-.form-label:hover,
-.form-label:focus{
-background-color: rgba(33, 150, 243, 1);
 
-}
-.iconCheck:hover,
-.iconCheck:focus{
-  fill:#FFFFFF ;
-  background-color:rgba(33, 150, 243, 1);
+  
 }
 
- .checkbox:checked + .form-label{
+ .checkbox:checked + .iconCheck{
    background-color: rgba(33, 150, 243, 1);
    border-radius: 2px;
 

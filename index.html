@@ -462,8 +462,8 @@
       </div>
 
       <div class="formContent">
-        <label class="formLabel"> <span class="formTextStyle">Телефон</span></label>
-        <input  class="inputStyle" name="user-tel" type="tel"/>
+        <label class="formLabel" for="tel"> <span class="formTextStyle">Телефон</span></label>
+        <input  class="inputStyle" name="user-tel" type="tel" id="tel"/>
         <svg class="formIcon" id="icon-phone-black"  width="18px" height="18px">
           <use href="./images/icons/userbox.svg#icon-phone" > 
           </use> 
@@ -490,11 +490,15 @@
     <div class="checkBoxContent" >
 
 
-    <input type="checkbox" class="checkbox" name="agree" value="agree" id="agree"/>  
+   
     
-   <label class="form-label" for="agree"><svg class="iconCheck" width="16px" height="15px"><use href="./images/icons/6dz.svg#icon-check"> </use></svg>
-     </label><span class="labelText">Соглашаюсь с рассылкой и принимаю </span><a href="#" class="check-a">Условия договора</a> 
-  
+   <label class="form-label" >
+     <input type="checkbox" class="checkbox"/>   
+    
+    <svg class="iconCheck" width="16px" height="15px"><use href="./images/icons/6dz.svg#icon-check"> </use></svg>
+    
+    <span class="labelText">Соглашаюсь с рассылкой и принимаю </span><a href="#" class="check-a">Условия договора</a> 
+   </label>
        
     </div>
     
