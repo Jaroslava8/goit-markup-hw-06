@@ -1259,9 +1259,9 @@ a {
   margin-top: 20px;
   margin-left: 40px;
   margin-right: 40px;
-
 }
 .labelText{
+
 font-family: 'Roboto';
 font-style: normal;
 
@@ -1273,6 +1273,7 @@ color: #757575;
 margin-left: 9px;
 }
 .check-a{
+
   text-decoration: underline;
   color: rgba(33, 150, 243, 1);
   font-weight: 400px;
@@ -1292,7 +1293,6 @@ overflow: hidden;
 
 .iconCheck{
  
-
   fill: #FFFFFF;
   border: 1px solid  rgba(33, 33, 33, 1);
   border-radius: 2px ;
@@ -1304,12 +1304,15 @@ overflow: hidden;
 }
 .form-label{
 
- 
   margin-right: 9px;
   margin-right: 0;
   width: 16px;
   height: 15px;
-  
+  display: inline-block;
+  display: flex;
+  align-items: center;
+
+
 
 }
 
